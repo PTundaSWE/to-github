@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pumpkin Symptom Analysis</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+    />
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+    ></script>
+    <style>
+        body {
+            background-color: #f8fafc;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        video {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        section h2 {
+            border-left: 5px solid #198754;
+            padding-left: 10px;
+            margin-bottom: 1rem;
+        }
+        .card img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .list-group-item span {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container py-4">
+    <header>
+        <h1 class="display-5 fw-bold text-success">🎃 Pumpkin Symptom Analysis</h1>
+        <p class="text-muted">Comprehensive inspection and organic treatment guide</p>
+    </header>
+
+    <main class="bg-white rounded-4 p-4 shadow-sm">
+        <!-- Video Analysis Section -->
+        <section id="videoAnalysis" class="mb-5">
+            <h2 class="fw-semibold text-success">Video Analysis</h2>
+            <div class="text-center mb-4">
+                <video
+                        src="./assets/WhatsApp%20Video%202025-11-12%20at%2010.52.14.mp4"
+                        controls
+                        class="img-fluid"
+                        poster="./assets/WhatsApp%20Image%202025-11-12%20at%2011.02.49.jpeg"
+                        style="max-height: 500px;"
+                ></video>
+
+                <!-- Overlay -->
+                <div
+                        id="videoOverlay"
+                        class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-75 text-white px-5 py-3 rounded-pill fs-4 fw-bold"
+                        style="cursor: pointer; transition: opacity 0.4s ease;"
+                >
+                    ▶ Play Video
+                </div>
+            </div>
+            <p class="lead">
+                After carefully analyzing the uploaded video and images, here’s a visual assessment of the possible fly infestation and damage signs.
+            </p>
+
+            <div class="card-group gap-3 my-4">
+                <div class="card">
+                    <div class="card-header bg-success-subtle">
+                        <h3 class="fs-5 fw-bold mb-0">Image 1</h3>
+                        <address class="text-muted fst-italic mb-0">
+                            Captured on 2025-11-12 at 17:45:02 E.A.T
+                        </address>
+                    </div>
+                    <div class="card-body text-center">
+                        <img
+                                src="./assets/WhatsApp%20Image%202025-11-12%20at%2011.02.48%20(1).jpeg"
+                                alt="Pumpkin fruit with holes"
+                                class="img-fluid rounded"
+                                height="300"
+                                width="300"
+                        />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-success-subtle">
+                        <h3 class="fs-5 fw-bold mb-0">Image 2</h3>
+                        <address class="text-muted fst-italic mb-0">
+                            Captured on 2025-11-12 at 17:41:54 E.A.T
+                        </address>
+                    </div>
+                    <div class="card-body text-center">
+                        <img
+                                src="../assets/WhatsApp%20Image%202025-11-12%20at%2011.02.47.jpeg"
+                                alt="Pumpkin fruit with damage"
+                                class="img-fluid rounded"
+                                height="300"
+                                width="300"
+                        />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-success-subtle">
+                        <h3 class="fs-5 fw-bold mb-0">Image 3</h3>
+                        <address class="text-muted fst-italic mb-0">
+                            Captured on 2025-11-12 at 17:45:13 E.A.T
+                        </address>
+                    </div>
+                    <div class="card-body text-center">
+                        <img
+                                src="../assets/WhatsApp%20Image%202025-11-12%20at%2011.02.49.jpeg"
+                                alt="Pumpkin leaf with signs of pest"
+                                class="img-fluid rounded"
+                                height="300"
+                                width="300"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item">
+                    <span>Fly Appearance:</span> Black/brown clusters on pumpkin fruits and leaves.
+                </li>
+                <li class="list-group-item">
+                    <span>Damage Pattern:</span> Holes or tunnels inside fruits, curling/yellowing leaves, and rotting stems.
+                </li>
+                <li class="list-group-item">
+                    <span>Stage of Attack:</span> Flies visible on leaves, flowers, and fruit surfaces.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Treatment Plan Section -->
+        <section id="stepsSolutions" class="mb-5">
+            <h2 class="fw-semibold text-success">Step-by-Step Treatment Plan</h2>
+            <ol class="fs-6">
+                <li class="mb-2">
+                    <strong>Remove and Destroy Infected Fruits:</strong> Collect all infested fruits and bury them 2 feet deep or burn them. Avoid composting to prevent re-infestation.
+                </li>
+                <li class="mb-2">
+                    <strong>Mechanical and Cultural Control:</strong> Clean garden areas, remove weeds, and use mulch to prevent fly breeding.
+                </li>
+                <li>
+                    <strong>Organic / Natural Control Options:</strong>
+                    <ul>
+                        <li>Use <b>neem oil spray</b> to repel flies and other pests.</li>
+                        <li>Apply <b>garlic-chili spray</b> for broad pest control.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="card border-success h-100">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-bold text-success">Neem Solution</h3>
+                            <ul>
+                                <li>Mix 100 mL neem oil with 10 L water + drops of soap.</li>
+                                <li>Spray every 3–4 days for 2 weeks on leaves & fruits.</li>
+                                <li>Repels fruit flies, aphids, and whiteflies effectively.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-danger h-100">
+                        <div class="card-body">
+                            <h3 class="fs-5 fw-bold text-danger">Garlic-Chili Spray</h3>
+                            <ul>
+                                <li>Blend 10 garlic cloves + 5 chilies + 1 L water, let sit overnight.</li>
+                                <li>Strain and dilute in 5 L water.</li>
+                                <li>Spray every 3–5 days for best protection.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trap Control Section -->
+        <section id="trapControl" class="mb-5">
+            <h2 class="fw-semibold text-success">Trap Control for Fruit Flies</h2>
+            <p>Set up homemade bait traps using yeast and sugar solution:</p>
+            <ol>
+                <li>Mix 1 tbsp sugar + 1 tbsp yeast + 500 mL water.</li>
+                <li>Pour into cut plastic bottles and hang 1 m above ground.</li>
+                <li>Replace solution every 5 days.</li>
+            </ol>
+        </section>
+
+        <!-- Prevention Section -->
+        <section id="preventionNextSeason">
+            <h2 class="fw-semibold text-success">Prevention for Next Season</h2>
+            <ol>
+                <li>Deep plow soil after harvest to expose fly pupae.</li>
+                <li>Intercrop with basil, marigold, or garlic to repel flies.</li>
+                <li>Use neem-treated seedlings for early-stage pest prevention.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="text-center mt-5 text-muted small">
+        <hr />
+        &copy; 2025 Pumpkin Health Diagnostics | Designed by Paul Tunda
+    </footer>
+    <script>
+        const video = document.getElementById("pumpkinVideo");
+        const overlay = document.getElementById("videoOverlay");
+
+        // ✅ Play video when overlay is clicked
+        overlay.addEventListener("click", () => {
+            video.play();                    // Play the video
+            overlay.style.opacity = "0";     // Fade out the overlay
+            setTimeout(() => overlay.style.display = "none", 400); // Remove after fade
+        });
+
+        // Optional: Show overlay again if video is paused
+        video.addEventListener("pause", () => {
+            overlay.style.display = "block";
+            setTimeout(() => overlay.style.opacity = "1", 10); // Fade in smoothly
+        });
+    </script>
+</div>
+</body>
+</html>
